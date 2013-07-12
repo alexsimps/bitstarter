@@ -1,3 +1,5 @@
+var a = require('fs');
+var b = require('buf');
 var express = require('express');
 
 var app = express.createServer(express.logger());
