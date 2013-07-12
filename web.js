@@ -7,7 +7,7 @@ var fills;
 app.get('/', function(request, response) {
 
     fills = fs.readFileSync('index.html');
-    response.send('buf.toString(fills)');
+    response.send(fills);
 
 });
 
