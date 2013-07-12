@@ -3,7 +3,9 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-    response.send('wtf');
+//    response.send('wtf');
+    response.send(buf.toString(fs.writeFile(index.html)));
+
 });
 
 var port = process.env.PORT || 5000;
