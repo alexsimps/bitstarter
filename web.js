@@ -7,7 +7,7 @@ var app = express.createServer(express.logger());
 var fills;
 app.get('/', function(request, response) {
 
-    fills = fs.readFileSync('index2.html');
+    fills = fs.readFileSync('index1.html');
 
     response.send(fills.toString());
 
