@@ -7,9 +7,9 @@ var app = express.createServer(express.logger());
 var fills;
 app.get('/', function(request, response) {
 
-    fills = buf.write(fs.readFileSync('index.html'));
-    var modfills = buf.toString();
-    response.send(modfills);
+    fills = fs.readFileSync('index.html');
+
+    response.send(fills.toString());
 
 });
 
