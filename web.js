@@ -1,3 +1,4 @@
+
 var fs = require('fs');
 var b = require('buffer');
 var express = require('express');
@@ -6,8 +7,9 @@ var app = express.createServer(express.logger());
 var fills;
 app.get('/', function(request, response) {
 
-    fills = fs.readFileSync('index.html');
-    response.send(fills);
+    fills = buf.write(fs.readFileSync('index.html'));
+    var modfills = buf.toString();
+    response.send(modfills);
 
 });
 
